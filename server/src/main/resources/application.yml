@@ -1,0 +1,10 @@
+spring:
+  config:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://paul.devine@code.bestbuy.com/stash/scm/~paul.devine/cloud-config-demo-configurations.git
+server:
+  port: 8888

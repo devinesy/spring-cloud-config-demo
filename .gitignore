@@ -1,0 +1,7 @@
+.gradle
+build/
+.idea
+*.iml
+MANIFEST.MF
+.gradletasknamecache
+**/.DS_Store
