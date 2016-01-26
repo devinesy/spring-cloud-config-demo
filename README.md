@@ -1,7 +1,7 @@
 demo-config
 ===========
 
-Simple demo project of Spring Cloud Config. Follows directions here:
+This is a simple demo/learning project of Spring Cloud Config. Follows directions here:
 * http://cloud.spring.io/spring-cloud-config/
 * http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html
 
@@ -9,6 +9,7 @@ Comprises a @EnableConfigServer server pointing to a git repository containing S
 
 TODO
 * Config change push notifications (looks like it requires Redis)
+* Better solution for supplying git repo credentials than command line args.
 
 Building and running from command line
 ---
@@ -20,4 +21,4 @@ Building and running from command line
 * Terminal 2 `gradle bootRun`
 * In browser:
 * http://localhost:8888/config-client//master  shows all properties from the properties file config-client in the git repo
-* http://localhost:8080/  says hello world with property sourced from the config server
+* http://localhost:8080/  says hello world with a property sourced from the config file in the git repo defined in server application.yml
